@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>portfolio</title>
+    <link rel="stylesheet" href="file.css" />
+  </head>
+  <body>
+    <nav>
+      <header>
+        <div class="logo">
+          <img src="../images/logo.png" alt="" style="height: 70px" />
+        </div>
+        <div class="head">
+          <ul>
+            <li class="list active">
+              <a href="#">
+                <span class="icon"
+                  ><ion-icon name="home-outline"></ion-icon
+                ></span>
+                <span class="text">Home</span>
+              </a>
+            </li>
+            <li class="list">
+              <a href="#">
+                <span class="icon"
+                  ><ion-icon name="person-outline"></ion-icon
+                ></span>
+                <span class="text">About</span>
+              </a>
+            </li>
+            <li class="list">
+              <a href="#">
+                <span class="icon"
+                  ><ion-icon name="code-slash-outline"></ion-icon
+                ></span>
+                <span class="text">Project</span>
+              </a>
+            </li>
+            <li class="list">
+              <a href="#">
+                <span class="icon"
+                  ><ion-icon name="call-outline"></ion-icon
+                ></span>
+                <span class="text">Contact</span>
+              </a>
+            </li>
+            <li class="list">
+              <a href="#">
+                <span class="icon"
+                  ><ion-icon name="briefcase-outline"></ion-icon
+                ></span>
+                <span class="text">Hire-me</span>
+              </a>
+            </li>
+            <div class="focus"></div>
+          </ul>
+        </div>
+      </header>
+
+      <h1 style="color: white">Hello! I'm</h1>
+      <h2 style="color: white">Saroj Kumari</h2>
+      <div class="wrapper">
+        <div class="static-txt">I'm a web</div>
+        <ul class="dynamic-txt">
+          <li><span class="auto-type">Designer</span></li>
+          <!-- <li><span>Web Developer</span></li> -->
+        </ul>
+      </div>
+      <button>Get Resume</button>
+    </nav>
+    <section id="service">
+      <h3>My Survice</h3>
+      <h1>Service provide for my client</h1>
+      <div class="service-name">
+        <div class="ser1">
+          <img src="../images/design.png" alt="" />
+          <h2>Design</h2>
+          <ul>
+            <li>>> &nbsp;&nbsp;&nbsp; HTML</li>
+            <li>>> &nbsp;&nbsp;&nbsp;CSS3</li>
+            <li>>> &nbsp;&nbsp;&nbsp;JavaScript</li>
+            <li>>> &nbsp;&nbsp;&nbsp;Canva</li>
+            <li>>> &nbsp;&nbsp;&nbsp;Bootstrap</li>
+          </ul>
+        </div>
+        <div class="ser2">
+          <img src="../images/dev.png" alt="" />
+          <!-- <h1>Development</h1> -->
+          <h2>Development</h2>
+          <ul>
+            <li>>> &nbsp;&nbsp;&nbsp; HTML/CSS</li>
+
+            <li>>> &nbsp;&nbsp;&nbsp;JavaScript</li>
+            <li>>> &nbsp;&nbsp;&nbsp;jQuery</li>
+            <li>>> &nbsp;&nbsp;&nbsp;Reactjs</li>
+            <li>>> &nbsp;&nbsp;&nbsp;Nodejs</li>
+            <li>>> &nbsp;&nbsp;&nbsp;MongoDB</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <section id="spacial_skills">
+      <h3>Spacial Skills</h3>
+      <h1>
+        My Special Skill <br />
+        Field Here.
+      </h1>
+      <button>Get Resume</button>
+      <div class="skills">
+        <div class="skill-list">
+          <h5>Communication</h5>
+          <p class="pp1">75%</p>
+          <div class="progress-bar">
+            <span class="p1"></span>
+          </div>
+        </div>
+        <div class="skill-list">
+          <h5>Communication</h5>
+          <p class="pp2">70%</p>
+          <div class="progress-bar">
+            <span class="p2"></span>
+          </div>
+        </div>
+        <div class="skill-list">
+          <h5>Communication</h5>
+          <p class="pp3">90%</p>
+          <div class="progress-bar">
+            <span class="p3"></span>
+          </div>
+        </div>
+        <div class="skill-list">
+          <h5>Communication</h5>
+          <p class="pp4">80%</p>
+          <div class="progress-bar">
+            <span class="p4"></span>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="project">
+      <h3>Awesome Portfolio</h3>
+      <h1>My Projects Here....</h1>
+      <div class="arrow">
+        <i class="fa-solid fa-angles-left"></i>
+      </div>
+      <div class="arrow">
+        <i class="fa-solid fa-angles-right"></i>
+      </div>
+    </section>
+  </body>
+
+  <script>
+    const list = document.querySelectorAll(".list");
+    function activeLink() {
+      list.forEach((item) => item.classList.remove("active"));
+      this.classList.add("active");
+    }
+    list.forEach((item) => item.addEventListener("click", activeLink));
+  </script>
+
+  <script
+    type="module"
+    src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+  ></script>
+  <script
+    nomodule
+    src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+  ></script>
+  <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+  <script>
+    var typed = new Typed(".auto-type", {
+      strings: ["Designer", "Developer"],
+      typeSpeed: 150,
+      backSpeed: 150,
+      loop: true,
+    });
+  </script>
+</html>
